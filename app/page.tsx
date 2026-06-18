@@ -1,3 +1,5 @@
+import { ContactForm } from "./contact-form";
+
 const services = [
   {
     title: "KI-Anwendungen",
@@ -57,7 +59,7 @@ export default function Home() {
           </nav>
           <a
             className="rounded-md bg-[#151a17] px-4 py-2 text-sm font-semibold text-white hover:bg-[#2b3730]"
-            href="mailto:hello@willyagency.ch?subject=KI-Anwendung%20fuer%20mein%20Unternehmen"
+            href="#kontakt"
           >
             Projekt starten
           </a>
@@ -263,29 +265,32 @@ export default function Home() {
               Haben Sie einen Prozess, der endlich als KI-App funktionieren soll?
             </h2>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <a
-              className="rounded-lg border border-white/16 bg-white p-5 text-[#151a17] hover:bg-[#f7f5ef]"
-              href="mailto:hello@willyagency.ch?subject=KI-Anwendung%20fuer%20mein%20Unternehmen"
-            >
-              <span className="block text-sm font-bold uppercase tracking-[0.14em] text-[#8a3e2f]">
-                E-Mail
-              </span>
-              <span className="mt-3 block text-xl font-semibold">
-                hello@willyagency.ch
-              </span>
-            </a>
-            <a
-              className="rounded-lg border border-white/16 bg-[#f1c84b] p-5 text-[#151a17] hover:bg-[#ffd966]"
-              href="https://saas-fee-concierge.ch"
-            >
-              <span className="block text-sm font-bold uppercase tracking-[0.14em]">
-                Demo
-              </span>
-              <span className="mt-3 block text-xl font-semibold">
-                Concierge testen
-              </span>
-            </a>
+          <div className="grid gap-4">
+            <ContactForm />
+            <div className="grid gap-4 sm:grid-cols-2">
+              <a
+                className="rounded-lg border border-white/16 bg-white/8 p-5 text-white hover:bg-white/12"
+                href="mailto:hello@willyagency.ch?subject=KI-Anwendung%20fuer%20mein%20Unternehmen"
+              >
+                <span className="block text-sm font-bold uppercase tracking-[0.14em] text-[#f1c84b]">
+                  E-Mail
+                </span>
+                <span className="mt-3 block text-xl font-semibold">
+                  hello@willyagency.ch
+                </span>
+              </a>
+              <a
+                className="rounded-lg border border-white/16 bg-[#f1c84b] p-5 text-[#151a17] hover:bg-[#ffd966]"
+                href="https://saas-fee-concierge.ch"
+              >
+                <span className="block text-sm font-bold uppercase tracking-[0.14em]">
+                  Demo
+                </span>
+                <span className="mt-3 block text-xl font-semibold">
+                  Concierge testen
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

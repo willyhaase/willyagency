@@ -22,3 +22,15 @@ npm run build
 ```
 
 The project requires Node.js `>=22.13.0`.
+
+## HubSpot
+
+The contact form posts to `/api/contact` and creates or updates a HubSpot
+contact, then attaches the submitted message as a note.
+
+Set these environment variables in Vercel:
+
+```bash
+HUBSPOT_PRIVATE_APP_TOKEN=
+HUBSPOT_OWNER_ID=93428995
+```
