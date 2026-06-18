@@ -8,11 +8,10 @@ production-ready automations. The first published case study is
 
 ## Stack
 
-- vinext
 - Next.js
 - React
 - Tailwind CSS
-- Cloudflare Worker-compatible Sites output
+- Vercel
 
 ## Development
 
